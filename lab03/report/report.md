@@ -185,14 +185,14 @@ $$
 $$
 
 
-![График численности для случая 2](https://github.com/Mukhammet/math-m/blob/master/lab03/image/image2.png?raw=true){ #fig:004 width=70% height=70% }
+![График численности для случая 2](https://github.com/Mukhammet/math-m/blob/master/lab03/image/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20(140).png?raw=true){ #fig:004 width=70% height=70% }
 
 Победа достается армии $X$.
 
 ## Код программы для боевых действий между регулярными войскми
 
 ```
-model labbattle1
+model lab3battle
   parameter Real a=0.31;
   parameter Real b=0.76;
   parameter Real c=0.8;
@@ -206,12 +206,12 @@ equation
   der(y)= -c*x-h*y+cos(4*time)+2;
 
 
-end labbattle1;
+end lab3battle1;
 ```
 ## Код программы для боевых действий с участием регулярных войск и партизанкого отряда
 
 ```
-model labbattle2
+model lab3mathmod2
   parameter Real a=0.21;
   parameter Real b=0.7;
   parameter Real c=0.56;
@@ -225,7 +225,7 @@ equation
   der(y)= -c*x*y-h*y+cos(10*time);
 
 
-end labbattle2;
+end lab3mathmod2;
 ```
 
 
